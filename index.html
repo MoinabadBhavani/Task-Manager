@@ -1,1 +1,27 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager with Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <button id="darkModeBtn">Toggle Dark Mode</button>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <div class="progress-container">
+            <label>Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+            <span id="progressPercent">0%</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
